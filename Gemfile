@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'mailboxer'
+
+gem 'shotgun'
