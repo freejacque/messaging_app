@@ -42,3 +42,4 @@ gem 'devise'
 gem 'mailboxer'
 
 gem 'shotgun'
+gem 'rack'

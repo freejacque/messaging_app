@@ -139,6 +139,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mailboxer
+  rack
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
