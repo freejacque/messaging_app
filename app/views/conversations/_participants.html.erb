@@ -1,0 +1,5 @@
+<% conversation.participants.each do |participant| %>
+  <% unless particpant == current_user %>
+    <%= gravatar_for participant %>
+  <% end %>
+<% end %>
