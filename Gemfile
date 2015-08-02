@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'pry', group: [:development, :test]
 
-gem 'devise'
+gem 'devise', git: 'git://github.com/plataformatec/devise.git'
 gem 'mailboxer'
 
 gem 'shotgun'
