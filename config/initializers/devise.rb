@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '99936506c581a6e0443d4a250204d58a060822775ae3d2fd030dc3b4142089081ab6e718575bb1e16dbd5880f29763dabb4cd9936b42b32f4e6d34f05ac5d103'
+  # config.secret_key = '7e6add3fa754fbc84f3a2efb1b6419eb718cde85930295ae57854dc842763448bf359d55616ce1d532240007c889554c9e5d163164519d05cd770472b73865af'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -99,7 +99,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '58200862d6156cb96806faceed86c05ff8b874753989be922ed3e80e40aa9a5f2d107aff50903b3310d59a3eb9ca6c9be7c79f34ea0dd20f281cab2b229ea95d'
+  # config.pepper = '9b4a235815614964cb2f34ec73ec29d966e6e1999600258ede7e507d1baf1301d7487b9603cd09b132b29dd7c667b478791f52cda13a96c6a44ca8e676c7a2cb'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -121,7 +121,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
-  config.reconfirmable = false
+  config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [:email]
@@ -153,9 +153,6 @@ Devise.setup do |config|
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
   # config.timeout_in = 30.minutes
-
-  # If true, expires auth token on session timeout.
-  # config.expire_auth_token_on_timeout = false
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.

@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: 2f45755e6ca924a4a2975d227f7a2c00022149ce
+  specs:
+    devise (3.5.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,13 +75,6 @@ GEM
       sass (~> 3.2.19)
     compass-rails (2.0.0)
       compass (>= 0.12.2)
-    devise (3.5.1)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.5.2)
     foreigner (1.7.4)
@@ -171,7 +176,7 @@ DEPENDENCIES
   bootstrap-will_paginate
   chosen-rails
   coffee-rails (~> 4.1.0)
-  devise
+  devise!
   gravatar_image_tag
   jbuilder (~> 2.0)
   jquery-rails
