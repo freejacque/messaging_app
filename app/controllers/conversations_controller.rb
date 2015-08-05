@@ -6,6 +6,14 @@ class ConversationsController < ApplicationController
 
 
   def index
+    if @boc.eql? "inbox"
+      @conversations = @mailbox.inbox
+    elsif @box.eql? "sent"
+      @conversations = @mailbox.sentbox
+    else
+      @conversations = @mailbox.trash
+    end
+
     @conversations = @mailbox.inbox.paginate(page: params[:page], per_page: 10)
   end
 
