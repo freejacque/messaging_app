@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   end
 
   resources :messages, only: [:new, :create]
+  resources :users, only: [:index]
   # Example resource route with options:
   #   resources :products do
   #     member do
