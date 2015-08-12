@@ -8,11 +8,11 @@
       <%= mailbox_section 'trash', @box %>
     </ul>
   </div>
+  <div class="col-sm-9">
+    <ul class="list-group">
+      <%= render partial: 'coversations/conversation', collection: @conversations %>
+    </ul>
 
-
-<p><%= link_to 'Start conversation', new_message_path, class: 'btn btn-lg btn-primary' %></p>
-<ul class="list-group">
-  <%= render partial: 'coversations/conversation', collection: @conversations %>
-</ul>
-
-<%= will_paginate %>
+    <%= will_paginate %>
+  </div>
+</div>
