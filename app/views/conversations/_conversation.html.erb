@@ -1,5 +1,10 @@
 <li class="list-group-item clearfix">
   <%= link_to conversation.subject, conversation_path(conversation) %>
+
+  <div class="btn-group-vertical pull-right">
+  </div>
+
+
   <p><%= render 'conversations/particpants', conversation: conversation %></p>
 
     <p><%= conversation.last_message.body %>
