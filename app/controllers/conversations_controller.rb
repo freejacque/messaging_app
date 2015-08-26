@@ -20,6 +20,12 @@ class ConversationsController < ApplicationController
   def show
   end
 
+  def mark_as_read
+    @conversation.mark_as_read(current_user)
+    flash[:success] = 'The conversation was marked as read.'
+    redirect_to conversations_path
+  end
+
   def reply
     current_user.reply_to_conversation(@conversation, params[:body])
     flash[:success] = 'Reply sent'
