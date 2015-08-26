@@ -38,7 +38,11 @@ class ConversationsController < ApplicationController
     redirect_to conversation_path
   end
 
-  def re
+  def restore
+    @conversation.untrash(current_user)
+    flash[:success] = 'The conversation was restored.'
+    redirect_to conversations_path
+  end
 
   private
 
