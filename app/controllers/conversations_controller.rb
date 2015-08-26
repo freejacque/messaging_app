@@ -32,6 +32,14 @@ class ConversationsController < ApplicationController
     redirect _to conversation_path(@conversation)
   end
 
+  def destroy
+    @conversation.move_to_trash(current_user)
+    flash[:success] = 'The conversation was moved to trash.'
+    redirect_to conversation_path
+  end
+
+  def re
+
   private
 
   def get_mailbox
@@ -49,9 +57,4 @@ class ConversationsController < ApplicationController
     @box = params[:box]
   end
 
-  def destroy
-    @conversation.move_to_trash(current_user)
-    flash[:success] = 'The conversation was moved to trash.'
-    redirect_to conversation_path
-  end
 end
