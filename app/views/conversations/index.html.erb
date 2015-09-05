@@ -15,7 +15,7 @@
       <p><%= link_to 'Empty trash', empty_trash_conversations_path, class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %></p>
     <% end %>
     <ul class="list-group">
-      <%= render partial: 'coversations/conversation', collection: @conversations %>
+      <%= render partial: 'conversations/conversation', collection: @conversations %>
     </ul>
 
     <%= will_paginate %>
