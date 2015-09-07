@@ -1,1 +1,10 @@
-new_message_email.text.erb
+You have a new message: <%= @subject %>
+===============================================
+
+You have received a new message:
+
+-----------------------------------------------
+<%= @message.body.html_safe? ? @message.body : strip_tags(@message.body) %>
+-----------------------------------------------
+
+Visit your inbox at <%= root_url %> for more info.
